@@ -1,0 +1,41 @@
+Vamos a definir las funciones principales que debe cumplir nuestra página:
+
+1. Debe contar con una paǵina de inicio, que nos de la bienvenida,la opción de iniciar la trivia por medio de un botón y el nombre del participante, este botón al presionar nos debe llevar a una nueva página en la que se de inicio a la trivia.
+
+2. Una vez estemos en la página de la trivia, se debe ver un recuadro en el cual este la pregunta,las opciones (opciones enumeradas con A,B,C,D) y por último la opción de cambiar de pregunta, cabe decir que no se puede saltar de pregunta sin haber respondido la previa.
+
+3. Una vez terminada la trivia, se debe mostrar una nueva página en la que se den las gracias por participar, el puntaje obtenido y la opción de iniciar de nuevo.
+
+/*Que debemos hacer con cada tecnología*/
+
+HTML
+
+1.
+
+Creamos archivo index.html : en este archivo creamos un div; en el cual va a estar la etiqueta header con la bienvenida, un form para ingresar el nombre del participante, un button para abrir la página de trivia.
+
+2. 
+
+creamos el archivo trivia.html :  en este archivo creamos otro div bot; en el cual creamos un div para la pregunta y las opciones, un botón para cambiar pregunta.
+
+3.
+
+En el mismo archivo de trivia, una vez terminen las preguntas, se debe mostrar un botón para regresar a la página pricipal, también debemos crear un div con los puntajes y un div que de las gracias por participar.
+
+CSS
+
+Para esta parte, debemos mirar los estilos más convenientes, los selectores más convenientes, etc...
+
+javaScript
+
+
+ class Usuario: esta clase va tener dos atributos, uno se recibe al momente de declarar el objeto(nombre), el otro se declara en el constrcutor(una lista de preguntas).
+ 
+ class Pregunta: esta clase va tener tres atributos que van a ser recibidos al momento de declarar un objeto, los atributos son: pregunta, lista de opciones , respuesta.
+ 
+ 
+agregarParticipante(): esta función nos permite guardar la información obtenida en el form en un arreglo, dicho arreglo va tener objetos de clase Usuario.
+
+cambiarPregunta(): esta función va cambiando las preguntas según se presione el botón, las preguntas van a estar en un arreglo que recibe objetos de clase Pregunta.
+
+mostrarPuntaje(): esta función va tomar el atributo puntaje de pregunta (si esta fue respondida correctamente) y lo va a sumar, con el fin de mostrar los puntos junto al usuario.

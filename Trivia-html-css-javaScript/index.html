@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia usando html, css y javaScript</title>
+    <link href="estilosCSS/estilosRegistro.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Bienvenidos al juego de la Trivia</h1>
+        </div>
+        <div >
+            <form onsubmit="agregarParticipante(event)" id="formulario">
+                <label for="nombre" class="marcador">Ingresa tu nombre: </label><br/>
+                <input type="text" class="ingresoNombre" id="nombreParticipante" required><br/>
+                <label for="nacionalidad" class="marcador">Ingresa tu nacionalidad:</label><br/>
+                <select class="seleccionNacionalidad" id="nacionalidadParticipante" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option>Colombia</option>
+                    <option>Venezuela</option>
+                    <option>Ecuador</option>
+                    <option>Argentina</option>
+                    <option>México</option>
+                    <option>Bolivia</option>
+                    <option>Perú</option>
+                    <option>Uruguay</option>
+                </select><br/>
+                <input type="submit" value="subir e Iniciar"><br/>
+                <div id="pruebametodo"></div>
+
+            </form>
+            <div id="botonIncioTrivia"></div>
+        </div>
+    </div>
+
+    <script src="ArchivosJS/registro.js"></script>
+</body>
+</html>

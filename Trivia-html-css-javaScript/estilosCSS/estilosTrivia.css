@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Estilo de fuente más legible */
+    background-color: #f4f4f9; /* Un color de fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que el contenido se centre verticalmente en la pantalla */
+}
+
+.contenedorPreguntas {
+    text-align: center; /* Centra el texto de las preguntas y opciones */
+    border: 2px solid #ccc; /* Borde suave para el contenedor */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para 3D */
+    background: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+button {
+    background-color: #007BFF; /* Color azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+#preguntaencabezado, #opcion1, #opcion2, #opcion3, #opcion4 {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#preguntaencabezado, #opcion1, #opcion2, #opcion3, #opcion4:hover {
+    background-color: #dee2e6; /* Cambio de color al pasar el ratón */
+}
